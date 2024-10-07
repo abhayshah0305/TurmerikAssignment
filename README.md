@@ -32,7 +32,6 @@ WebDriver
 This project uses Selenium, so you need to install a browser driver (in this case, ChromeDriver):
 
 bash
-Copy code
 pip install webdriver-manager
 Ensure you have Google Chrome installed as this script uses ChromeDriver.
 
@@ -74,7 +73,6 @@ Patient History Summary: The patient's summarized medical history will be printe
 Example JSON structure:
 
 json
-Copy code
 {
     "patientId": "66e284dc-adc0-fce1-408f-4cdfa2a8e9e1",
     "eligibleTrials": [
