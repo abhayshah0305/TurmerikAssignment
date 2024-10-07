@@ -4,12 +4,14 @@ This project implements a patient-to-clinical trial matching algorithm that scra
 
 ## Table of Contents
 
-- [Prerequisites]
-- [Setup]
-- [Usage]
-- [Features]
-- [File Descriptions]
-- [Limitations]
+
+- [Prerequisites](#prerequisites)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Features](#features)
+- [File Descriptions](#file-descriptions)
+- [Limitations](#limitations)
+- (#license)
 
 ---
 
