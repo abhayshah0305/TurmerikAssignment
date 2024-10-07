@@ -1,15 +1,15 @@
-# Clinical Trial Matching Algorithm
+# Turmerik Trial Matching Algorithm
 
 This project implements a patient-to-clinical trial matching algorithm that scrapes clinical trial data from ClinicalTrials.gov, processes patient data from a Synthea XML file, and matches patients to trials based on inclusion/exclusion criteria. The project uses AI to generate explanations for the matches.
 
 ## Table of Contents
 
-- [Prerequisites](#prerequisites)
-- [Setup](#setup)
-- [Usage](#usage)
-- [Features](#features)
-- [File Descriptions](#file-descriptions)
-- [Limitations](#limitations)
+- [Prerequisites]
+- [Setup]
+- [Usage]
+- [Features]
+- [File Descriptions]
+- [Limitations]
 
 ---
 
