@@ -5,13 +5,13 @@ This project implements a patient-to-clinical trial matching algorithm that scra
 ## Table of Contents
 
 
-- [Prerequisites](#prerequisites)
-- [Setup](#setup)
-- [Usage](#usage)
-- [Features](#features)
-- [File Descriptions](#file-descriptions)
-- [Limitations](#limitations)
-- (#license)
+- Prerequisites
+- Setup
+- Usage
+- Features
+- File Descriptions
+- Limitations
+
 
 ---
 
@@ -41,26 +41,22 @@ You need an API key to access OpenAI's GPT models. Sign up at OpenAI and get you
 
 Set your OpenAI API key in the code by replacing 'your-openai-api-key' with your actual API key:
 
-python
-Copy code
 openai.api_key = 'your-openai-api-key'
 Setup
 1. Clone the repository
 First, clone the GitHub repository:
 
 bash
-Copy code
+
 git clone https://github.com/yourusername/yourrepository.git
 Navigate into the project directory:
 
 bash
-Copy code
-cd yourrepository
+cd your repository
 2. Install Dependencies
 Install all the required Python libraries by running:
 
 bash
-Copy code
 pip install -r requirements.txt
 If the requirements.txt file is not available, you can manually install the required libraries as shown in the Prerequisites section.
 
@@ -69,7 +65,6 @@ Usage
 To run the main script that loads patient data from patient1.xml, scrapes clinical trials from ClinicalTrials.gov, matches the patient to relevant trials, and generates AI-based explanations, run:
 
 bash
-Copy code
 python main.py
 2. Output
 The program will generate the following outputs:
@@ -91,17 +86,23 @@ Copy code
         }
     ]
 }
-Features
+
+#Features
+
 Patient Data Parsing: Extracts patient information (ID, age, gender, conditions, medications) from a C-CDA Synthea XML file.
 Clinical Trial Scraping: Scrapes clinical trial data from ClinicalTrials.gov, filtering for trials actively recruiting patients.
 Inclusion/Exclusion Criteria Matching: Matches patients to trials based on their conditions and medications.
 AI-Powered Explanations: Uses OpenAI's GPT model to generate explanations for why a patient is eligible for certain trials.
 JSON and Excel Output: Saves matched trials to JSON and Excel formats for easy access and review.
-File Descriptions
+
+#File Descriptions
+
 main.py: The main script that performs the patient-to-clinical-trial matching and generates the output files.
 patient1.xml: Example XML file containing synthetic patient data generated using Synthea.
 matched_trials.json: Output JSON file that contains a list of clinical trials matched for the patient.
 requirements.txt: Contains the Python dependencies required to run the project.
-Limitations
+
+#Limitations
+
 Exclusion Criteria: Currently, exclusion criteria are a placeholder and not fully implemented. You can extend this feature as needed.
 Data Source: The project scrapes clinical trials from ClinicalTrials.gov using Selenium, which may be slow or unreliable if the website's structure changes.
