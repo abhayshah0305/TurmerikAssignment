@@ -10,7 +10,6 @@ This project implements a patient-to-clinical trial matching algorithm that scra
 - [Features](#features)
 - [File Descriptions](#file-descriptions)
 - [Limitations](#limitations)
-- [License](#license)
 
 ---
 
@@ -67,16 +66,18 @@ Usage
 1. Load Patient Data and Match to Trials
 To run the main script that loads patient data from patient1.xml, scrapes clinical trials from ClinicalTrials.gov, matches the patient to relevant trials, and generates AI-based explanations, run:
 
+bash
+Copy code
 python main.py
-
 2. Output
 The program will generate the following outputs:
 Matched Trials JSON: A JSON file named matched_trials.json will be created containing all the trials the patient is eligible for.
 Matched Trials Excel: An Excel file named patientID_matched_trials.xlsx will be generated with the list of eligible trials.
 Patient History Summary: The patient's summarized medical history will be printed to the terminal.
-
 Example JSON structure:
 
+json
+Copy code
 {
     "patientId": "66e284dc-adc0-fce1-408f-4cdfa2a8e9e1",
     "eligibleTrials": [
@@ -88,21 +89,17 @@ Example JSON structure:
         }
     ]
 }
-
-
 Features
 Patient Data Parsing: Extracts patient information (ID, age, gender, conditions, medications) from a C-CDA Synthea XML file.
 Clinical Trial Scraping: Scrapes clinical trial data from ClinicalTrials.gov, filtering for trials actively recruiting patients.
 Inclusion/Exclusion Criteria Matching: Matches patients to trials based on their conditions and medications.
 AI-Powered Explanations: Uses OpenAI's GPT model to generate explanations for why a patient is eligible for certain trials.
 JSON and Excel Output: Saves matched trials to JSON and Excel formats for easy access and review.
-
 File Descriptions
 main.py: The main script that performs the patient-to-clinical-trial matching and generates the output files.
 patient1.xml: Example XML file containing synthetic patient data generated using Synthea.
 matched_trials.json: Output JSON file that contains a list of clinical trials matched for the patient.
 requirements.txt: Contains the Python dependencies required to run the project.
-
 Limitations
 Exclusion Criteria: Currently, exclusion criteria are a placeholder and not fully implemented. You can extend this feature as needed.
 Data Source: The project scrapes clinical trials from ClinicalTrials.gov using Selenium, which may be slow or unreliable if the website's structure changes.
