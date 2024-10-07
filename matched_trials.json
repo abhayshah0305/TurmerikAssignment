@@ -1,0 +1,17 @@
+{
+    "patientId": "66e284dc-adc0-fce1-408f-4cdfa2a8e9e1",
+    "eligibleTrials": [
+        {
+            "trialId": "NCT123456",
+            "trialName": "Study of New Cancer Treatment",
+            "eligibilityCriteriaMet": ["Condition criteria met"],
+            "explanation": "The patient matches this trial because their condition, Diabetes, is one of the target conditions for this trial. The trial is recruiting patients with this condition."
+        },
+        {
+            "trialId": "NCT789012",
+            "trialName": "Hypertension Treatment Study",
+            "eligibilityCriteriaMet": ["Condition criteria met"],
+            "explanation": "The patient was selected for this trial because their condition, Hypertension, fits the inclusion criteria for the study."
+        }
+    ]
+}
